@@ -7,7 +7,16 @@ Resetbtn.addEventListener('click', function(){
     const nome = document.getElementById('nome').value ="";
     let km = document.getElementById('Km').value = "";
     let age = document.getElementById('age').value = ""
-    
+    let divnome = document.getElementById('namesur')
+    let divcosto = document.getElementById('costo')
+    let divoffer = document.getElementById('offer')
+    let divcarrozza = document.getElementById('carrozza')
+    let divcode = document.getElementById('code')
+    divnome.innerHTML = "";
+    divcosto.innerHTML = "";
+    divoffer.innerHTML = "";
+    divcarrozza.innerHTML = "";
+    divcode.innerHTML = "";
 })
 
 button.addEventListener('click', function(){
