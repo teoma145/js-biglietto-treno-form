@@ -1,6 +1,4 @@
 const button = document.querySelector('#invia');
-const numeroCasuale = Math.floor(Math.random() * 10) + 1;
-const numeroCasuale2 = Math.floor(Math.random() * 10000) + 1;
 const Resetbtn = document.querySelector('.btn-info');
 
 Resetbtn.addEventListener('click', function(){
@@ -29,6 +27,8 @@ button.addEventListener('click', function(){
     let divoffer = document.getElementById('offer')
     let divcarrozza = document.getElementById('carrozza')
     let divcode = document.getElementById('code')
+    const numeroCasuale = Math.floor(Math.random() * 10) + 1;
+    const numeroCasuale2 = Math.floor(Math.random() * 10000) + 1;
     divcode.innerHTML=`numero cp: ${numeroCasuale2}`
     divnome.innerHTML =`<p> Nome passeggero: ${nome}`;
     divcarrozza.innerHTML=`Carrozza: ${numeroCasuale}`
