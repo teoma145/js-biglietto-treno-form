@@ -32,7 +32,8 @@ button.addEventListener('click', function(){
     divcode.innerHTML=`numero cp: ${numeroCasuale2}`
     divnome.innerHTML =`<p> Nome passeggero: ${nome}`;
     divcarrozza.innerHTML=`Carrozza: ${numeroCasuale}`
-    if(nome == '' || km == '' || age == '')
+    
+    if(nome == '' || km == '' || age == '' || km < 0)
     { alert('informazioni errate') }
     else if( age == "minorenne"){
         prezzobiglietto = prezzobiglietto - (prezzobiglietto * 20/100);
